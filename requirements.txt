@@ -1,0 +1,4 @@
+requests
+lxml
+jinja2
+daiquiri

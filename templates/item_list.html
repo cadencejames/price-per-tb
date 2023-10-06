@@ -1,0 +1,35 @@
+{% extends "page.html" %}
+
+{% block title %}{{what}} sorted by price/TB{% endblock %}
+
+{% block content %}
+<h1>{{self.title()}}</h1>
+
+<p>List of {{ what }} available for sale from <a href="http://newegg.com/">Newegg.com</a>, sorted by the price per TB.</p>
+
+<p>Built by <a href="http://edwardbetts.com">Edward Betts</a>.
+
+Comments welcome: edward@4angle.com</p>
+
+<p><a href="../index.html">back to index</a></p>
+
+<p>Last updated: {{ today.strftime('%d %B %Y') }}.<p>
+
+<table class="main">
+<tr>
+<th align="right">Price<br>per TB</th>
+<th align="right">Price</th>
+<th align="right">Size</th>
+<th align="left">Drive</th>
+</tr>
+{% for hdd in items %}
+<tr>
+<td align="right">${{ '%.2f' | format(hdd.price_per_tb) }}</td>
+<td align="right">{{ hdd.price }}</td>
+<td align="right">{{ hdd.size }}</td>
+<td><a href="https://www.newegg.com/Product/Product.aspx?Item={{ hdd.number }}">{{ hdd.title }}</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

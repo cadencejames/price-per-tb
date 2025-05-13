@@ -1,4 +1,11 @@
 # HDD/SSD Price Per TB Scraper & Report Generator
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![Requests](https://img.shields.io/badge/library-requests-blue)
+![beautifulsoup4](https://img.shields.io/badge/library-beautifulsoup4-blue)
+![Selenium](https://img.shields.io/badge/library-selenium-blue)
+![License](https://img.shields.io/github/license/cadencejames/price-per-tb)
+![Last Commit](https://img.shields.io/github/last-commit/cadencejames/price-per-tb)
+![Contributors](https://img.shields.io/github/contributors/cadencejames/price-per-tb)
 
 This Python script scrapes hard drive (HDD) and solid-state drive (SSD) listings from Amazon, Newegg, and ServerPartDeals. It processes this data to calculate the price per terabyte ($/TB) and generates a self-contained, interactive HTML report designed to be hosted on a static site like GitHub Pages.
 

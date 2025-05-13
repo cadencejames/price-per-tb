@@ -7,7 +7,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/cadencejames/price-per-tb)
 ![Contributors](https://img.shields.io/github/contributors/cadencejames/price-per-tb)
 
-This Python script scrapes hard drive (HDD) and solid-state drive (SSD) listings from Amazon, Newegg, and ServerPartDeals. It processes this data to calculate the price per terabyte ($/TB) and generates a self-contained, interactive HTML report designed to be hosted on a static site like GitHub Pages.
+This Python script scrapes hard drive (HDD) listings from Amazon, Newegg, and ServerPartDeals. It processes this data to calculate the price per terabyte ($/TB) and generates a self-contained, interactive HTML report designed to be hosted on a static site like GitHub Pages.
 
 The generated HTML report features:
 *   Combined listings from all supported retailers.
